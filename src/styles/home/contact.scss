@@ -1,0 +1,25 @@
+section#contact {
+    .contact-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        .inner-wrapper {
+            text-align: center;
+
+            .title {
+                margin-bottom: 100px;
+            }
+
+            p {
+                margin: 0 0 8px;
+
+            }
+
+           .link {
+                text-decoration: none;
+                color: black
+            }
+        }
+    }
+}

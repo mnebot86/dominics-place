@@ -1,12 +1,13 @@
 import * as React from 'react';
 import { Layout } from '/src/components';
-import { Splash } from '/src/screens/home';
+import { Splash, Contact } from '/src/screens/home';
 
 const IndexPage = () => {
 	return (
 		<Layout>
 			<main id="home-page">
 				<Splash />
+				<Contact />
 			</main>
 		</Layout>
 	);
