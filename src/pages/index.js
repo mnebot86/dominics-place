@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Layout } from '/src/components';
-import { Splash, Contact } from '/src/screens/home';
+import { Splash, Contact, MidSplash } from '/src/screens/home';
 
 const IndexPage = () => {
 	return (
@@ -8,6 +8,7 @@ const IndexPage = () => {
 			<main id="home-page">
 				<Splash />
 				<Contact />
+				<MidSplash />
 			</main>
 		</Layout>
 	);
