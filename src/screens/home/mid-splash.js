@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Splash = () => {
+const MidSplash = () => {
 	return (
-		<section id="splash">
+		<section id="mid-splash">
 			<div>
 				<div className="background" />
 			</div>
@@ -10,4 +10,4 @@ const Splash = () => {
 	);
 };
 
-export default Splash;
+export default MidSplash;
