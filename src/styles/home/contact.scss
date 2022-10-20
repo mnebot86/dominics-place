@@ -1,0 +1,19 @@
+section#contact {
+    > div {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+
+        .location {
+            max-width: 440px;
+        }
+
+        .hours {
+            max-width: 250px;
+        }
+
+        .contact {
+            max-width: 300px;
+        }
+    }
+}
