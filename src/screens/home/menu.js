@@ -11,12 +11,21 @@ import {
 	LiteAndFit,
 	BreakfastSides,
 	KidsBreakfast,
+	Appetizers,
+	Entrees,
+	Burgers,
+	LunchSandwiches,
+	Flatbreads,
+	Salads,
+	LunchSides,
+	LunchKidsMenu,
+	Drinks,
 } from '../../components/home';
 
 const ITEMS_LIST = {
 	Traditional: <Traditional />,
 	Benedicts: <Benedicts />,
-	Sandwiches: <BreakfastSandwiches />,
+	'Breakfast Sandwiches': <BreakfastSandwiches />,
 	Omelets: <Omelets />,
 	Grits: <Grits />,
 	Signature: <Signature />,
@@ -24,25 +33,23 @@ const ITEMS_LIST = {
 	Lite: <LiteAndFit />,
 	Sides: <BreakfastSides />,
 	"Kid's": <KidsBreakfast />,
+	Appetizers: <Appetizers />,
+	Entrees: <Entrees />,
+	Burgers: <Burgers />,
+	Sandwiches: <LunchSandwiches />,
+	Flatbreads: <Flatbreads />,
+	Salads: <Salads />,
+	'Lunch Sides': <LunchSides />,
+	'Kids Lunch': <LunchKidsMenu />,
+	Drinks: <Drinks />,
 };
 
 const Menu = () => {
 	const [selectedCategory, setSelectedCategory] = useState(BREAKFAST);
-	const [selected, setSelected] = useState(TRADITIONAL);
 	const [listName, setListName] = useState('Traditional');
 
-	const getCategoryList = (type) => {
-		return type;
-	};
-
-	const getMenuItems = (type) => {
-		return type;
-	};
-
 	const handleClick = (type) => {
-		console.log({ type });
 		setListName(type);
-		setSelected(MENU_TYPES[type]);
 	};
 
 	return (

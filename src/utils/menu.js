@@ -1,7 +1,7 @@
 export const BREAKFAST = [
 	'Traditional',
 	'Benedicts',
-	'Sandwiches',
+	'Breakfast Sandwiches',
 	'Omelets',
 	'Signature',
 	'Sweets',
@@ -18,16 +18,10 @@ export const LUNCH = [
 	'Sandwiches',
 	'Flatbreads',
 	'Salads',
-	'Sides',
-	"Kid's",
+	'Lunch Sides',
+	'Kids Lunch',
 	'Drinks',
 ];
-
-export const MENU_TYPES = {
-	Traditional: TRADITIONAL,
-	Benedicts: BENEDICTS,
-	Sandwiches: BREAKFAST_SANDWICHES,
-};
 
 export const TRADITIONAL = [
 	{
@@ -340,3 +334,306 @@ export const KID_MENU = [
 		price: '$2.49',
 	},
 ];
+
+export const APPETIZERS = [
+	{
+		name: 'Fried Pickles',
+		price: '$7.99',
+		description:
+			'Cajun battered, sprinkled with paprika and served with aioli for dipping',
+	},
+	{
+		name: 'Crab Cakes',
+		price: '$14.99',
+		description:
+			'Crab cakes served over a bed of romaine lettuce and drizzled with our homemade aioli',
+	},
+	{
+		name: 'Mama Mia Calamari',
+		price: '$14.99',
+		description:
+			'Deep fried calamari served in a white wine butter sauce tossed with banana peppers and marinara for dipping',
+	},
+	{
+		name: 'Mozzarella Stix',
+		price: '$7.99',
+		description: 'Served with Marinara sauce',
+	},
+	{
+		name: 'Chicken Wings (8 per order)',
+		price: '$12.99',
+		description: 'Choose one of your favorite, served with celery sticks',
+		flavors: [
+			'Lemon Pepper',
+			'Dry Rub Sweet Chilli',
+			'Garlic Parmesan',
+			'Buffalo',
+			'Mango Habonero',
+			'BBQ',
+			'Pineapple Teriyaki',
+		],
+	},
+];
+
+export const ENTREES = [
+	{
+		name: 'Fish & Chips',
+		price: ' $15.99',
+		description:
+			'Beer batter fried fish and homemade Potatoes chips severed with coleslaw, tartar sauce and pickles.',
+	},
+	{
+		name: 'Chicken Parmesan',
+		price: ' $14.99',
+		description:
+			'Breaded chicken breast. Covered in tomato sauce with mozzarella and provolone cheese',
+	},
+	{
+		name: 'Lobster Roll',
+		price: ' $23.99',
+		description:
+			'1/2 pound of real lobster meat tossed in a butter leman light mayonnaise base stuffed in a toasted, butter roll and served hot. With choice of French fries or homemade potato chips',
+	},
+	{
+		name: 'Baked Lobster Mac and Cheese',
+		price: ' $23.99',
+		description:
+			'A generous amount of lobster meat tossed in a rich 3 cheese sauce mixed with cavatappi pasta. Topped with Ritz cracker crumbles, baked to perfection',
+	},
+	{
+		name: 'Baked Mac and Cheese',
+		price: ' $16.99',
+		description:
+			'Rich and creamy 3 cheese blend topped with break crumbs and baked to perfection',
+		protein:
+			'Chicken $3, Lobster $8, Salmon $7, Shrimp $7, Bacon $4, Ham $4',
+	},
+];
+
+export const BURGERS = [
+	{
+		name: 'The Classic',
+		price: '$11.99',
+		description: 'Choice of cheese, lettuce, tomato, red onion',
+	},
+	{
+		name: 'The Over Easy',
+		price: '$11.99',
+		description: '1 egg served over easy, bacon, onions, lettuce, tomato',
+	},
+	{
+		name: 'Feta Burger',
+		price: '$12.99',
+		description: 'Feta cheese, cucumbers tomatoes, and red onion',
+	},
+	{
+		name: 'The Champ',
+		price: '$13.99',
+		description:
+			'Onion strings, bacon, tomato, cheddar cheese and bbq sauce',
+	},
+];
+
+export const LUNCH_SANDWICHES = [
+	{
+		name: 'BLT Club',
+		price: '$9.99',
+		description:
+			'Choice of White, Wheat Italian, Rye, spinach wrap, white wrap, wheat wrap, tomato basil wrap, or a sub roll',
+	},
+	{
+		name: 'The Philly',
+		price: '$13.99',
+		description:
+			'Shaved Steak, mayonnaise, and American cheese. (make it a bomb for 3.99)',
+	},
+	{
+		name: 'The Buffer',
+		price: '$11.99',
+		description:
+			'Crispy Chicken Tenders, bleu cheese dressing, lettuce and tomato',
+	},
+	{
+		name: 'Tuna Melt',
+		price: '$11.99',
+		description: 'Tuna, swizz cheese, tomato served on Rye Toast',
+	},
+];
+
+export const FLATBREADS = [
+	{
+		name: 'Shrimp Mozambique',
+		price: '$15.99',
+		description: 'Grill shrimp, caramelized onions and mozzarella',
+	},
+	{
+		name: 'Buffalo Chicken Bacon Ranch',
+		price: '$14.99',
+		description:
+			'Buffalo fried chicken, bacon bits and cheddar, drizzled with ranch',
+	},
+	{
+		name: 'Steak and Cheese',
+		price: '$17.99',
+		description:
+			'Philly steak and shredded mozzarella drizzled with chipotle aioli',
+	},
+];
+
+export const SALADS = [
+	{
+		name: 'Classic Caesar',
+		price: '$9.99',
+		description:
+			'Romaine lettuce, shaved parmesan cheese, crouton and Caesar dressing',
+	},
+	{
+		name: 'Summer',
+		price: '$11.99',
+		description:
+			'Spinach, romaine, red onions, strawberries, walnuts, feta cheese, and raspberry vinaigrette',
+	},
+	{
+		name: 'Greek',
+		price: '$10.99',
+		description:
+			'Tomato, cucumber, onions, Kalamata olives, green peppers, feta cheese and Greek dressing',
+	},
+	{
+		name: 'Cobb',
+		price: '$11.99',
+		description:
+			'Romaine lettuce, cucumber, cherry tomatoes, red onions, bacon bits, boiled eggs, gorgonzola cheese, with ranch dressing',
+	},
+];
+
+export const LUNCH_SIDES = [
+	{
+		name: 'French Fries',
+		price: '$3.99',
+	},
+	{
+		name: 'Fruit Bowl',
+		price: '$7.99',
+	},
+	{
+		name: 'Onion Strings',
+		price: '$3.99',
+	},
+	{
+		name: 'Homemade Chips',
+		price: '$3.99',
+	},
+	{
+		name: 'Coleslaw',
+		price: '$3.99',
+	},
+	{
+		name: 'French Fries',
+		price: '$3.99',
+	},
+	{
+		name: 'Pasta w/ Butter',
+		price: '$4.99',
+	},
+	{
+		name: 'Pasta w/ Marinara',
+		price: '$5.99',
+	},
+	{
+		name: 'Salad',
+		price: '$4.99',
+	},
+	{
+		name: 'Mix Vegetables',
+		price: '$4.99',
+	},
+];
+
+export const LUNCH_KIDS_MENU = [
+	{
+		name: 'Chicken tenders and Fries',
+		price: '$7.99',
+	},
+	{
+		name: 'Cheeseburger and Fries',
+		price: '$7.99',
+	},
+	{
+		name: "Mac n' Cheese",
+		price: '$6.99',
+	},
+	{
+		name: 'Grill Cheese',
+		price: '$6.99',
+	},
+	{
+		name: 'Hot dog and Fries',
+		price: '$6.99',
+	},
+];
+
+export const DRINKS = [
+	{
+		name: 'Juice (apple, orange, cranberry, pineapple)',
+		price: '$3.99/$4.99',
+	},
+	{
+		name: 'Milk (regular, chocolate or coffee)',
+		price: '$2.99',
+	},
+	{
+		name: 'Hot Chocolate',
+		price: '$2.99',
+	},
+	{
+		name: 'Soda (Coke, Diet Coke, Sprite, Ginger Ale, Pink Lemonade)',
+		price: '$2.99',
+	},
+	{
+		name: 'Hot Tea',
+		price: '$2.99',
+	},
+	{
+		name: 'Iced Tea',
+		price: '$3.49',
+	},
+	{
+		name: 'Hot Coffee',
+		price: '$2.99',
+	},
+	{
+		name: 'Iced Coffee',
+		price: '$3.49',
+	},
+	{
+		name: 'Flavored Hot Coffee',
+		price: '$2.99',
+	},
+	{
+		name: 'Flavored Iced Coffee',
+		price: '$3.49',
+	},
+];
+
+export const MENU_TYPES = {
+	Traditional: TRADITIONAL,
+	Benedicts: BENEDICTS,
+	'Breakfast Sandwiches': BREAKFAST_SANDWICHES,
+	Omelets: OMELETS,
+	Grits: GRITS,
+	'Signature Plates': SIGNATURE_PLATES,
+	'Sweet Treats': SWEET_TREATS,
+	'Lit and Fit': LITE_AND_FIT,
+	'Breakfast sides': BREAKFAST_SIDES,
+	'Kid Menu': KID_MENU,
+	Appetizers: APPETIZERS,
+	Entrees: ENTREES,
+	Burgers: BURGERS,
+	'Lunch Sandwiches': LUNCH_SANDWICHES,
+	Flatbreads: FLATBREADS,
+	Salads: SALADS,
+	'Lunch Sides': LUNCH_SIDES,
+	'Lunch Kids Menu': LUNCH_KIDS_MENU,
+	Drinks: DRINKS,
+};
