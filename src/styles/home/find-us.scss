@@ -1,0 +1,19 @@
+section#find-us {
+    h1 {
+        margin-bottom: 153px;
+    }
+
+    .icon-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 100px;
+
+        img {
+            width: 122px;
+            height: 120px;
+            object-fit: cover;
+            flex-shrink: 1;
+        }
+    }
+}

@@ -7,6 +7,7 @@ import {
 	Menu,
 	AboutUs,
 	Map,
+	FindUs,
 } from '/src/screens/home';
 
 const IndexPage = () => {
@@ -19,6 +20,7 @@ const IndexPage = () => {
 				<Menu />
 				<AboutUs />
 				<Map />
+				<FindUs />
 			</main>
 		</Layout>
 	);
