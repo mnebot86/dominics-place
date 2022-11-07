@@ -4,3 +4,4 @@ export { default as MidSplash } from './mid-splash';
 export { default as Menu } from './menu';
 export { default as AboutUs } from './about-us';
 export { default as Map } from './map';
+export { default as FindUs } from './find-us';
