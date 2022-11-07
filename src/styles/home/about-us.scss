@@ -1,0 +1,27 @@
+section#about-us {
+    h1 {
+        margin-bottom: 97px;
+    }
+
+    .container {
+        flex-wrap: wrap;
+        gap: 88px;
+        justify-content: center;
+
+        &:last-child {
+            flex-wrap: wrap-reverse;
+            margin-top: 277px;
+        }
+
+
+        img {
+            flex: 1 1 600px;
+            object-fit: cover;
+        }
+
+        p {
+            flex: 1 1 600px;
+        }
+    }
+}
+
