@@ -1,0 +1,31 @@
+nav#nav {
+    img {
+        display: block;
+        margin: 0 auto;
+        max-width: 469px;
+        margin-bottom: 35px;
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 40px;
+
+        li {
+            a {
+                text-decoration: none;
+                color: black;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $desktop) {
+    nav#nav {
+       ul {
+            font-size: 20px;
+        }
+    }
+}
