@@ -1,11 +1,15 @@
 section#contact {
 	> div {
 		display: flex;
-		justify-content: space-between;
+		justify-content: center;
+		justify-items: center;
 		text-align: center;
+		font-size: 40px;
+		flex-wrap: wrap;
 
 		.location {
 			max-width: 440px;
+			margin: 0 auto;
 		}
 
 		.hours {
@@ -14,6 +18,15 @@ section#contact {
 
 		.contact {
 			max-width: 300px;
+			margin: 0 auto;
+		}
+	}
+}
+
+@media screen and (max-width: $desktop) {
+	section#contact {
+		> div {
+			font-size: 20;
 		}
 	}
 }
