@@ -5,10 +5,11 @@ section#menu {
         display: flex;
         justify-content: center;
         list-style: none;
+        flex-wrap: wrap;
 
         li {
             border-right: 1px solid black;
-            flex: 1;
+            flex: 1 10%;
             min-width: 100px;
             font-size: 18px;
 
@@ -17,6 +18,20 @@ section#menu {
                 min-width: none;
             }
         }
+    }
+}
 
+@media screen and (max-width: $desktop) {
+    section#menu {
+        .breakfast-lunch-menu {
+            flex-wrap: nowrap;
+        }
+
+        ul {
+            li {
+                border: none;
+                margin: 5px 0;
+            }
+        }
     }
 }

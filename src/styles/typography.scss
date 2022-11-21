@@ -1,0 +1,43 @@
+@font-face {
+    font-family: 'Inconsolata';
+    src: url('../font/Inconsolata-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Inconsolata Bold';
+    src: url('../font/Inconsolata-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Inconsolata Black';
+    src: url('../font/Inconsolata-Black.ttf');
+}
+
+@font-face {
+    font-family: 'Inconsolata Extra Black';
+    src: url('../font/Inconsolata-ExtraBold.ttf');
+}
+
+@font-face {
+    font-family: 'Inconsolata Light';
+    src: url('../font/Inconsolata-Light.ttf');
+}
+
+@font-face {
+    font-family: 'Inconsolata Medium';
+    src: url('../font/Inconsolata-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'Inconsolata Semibold';
+    src: url('../font//Inconsolata-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: 'Inconsolata Thin';
+    src: url('../font/Inconsolata-ExtraLight.ttf');
+}
+
+.capitalize {
+    text-transform: uppercase;
+}

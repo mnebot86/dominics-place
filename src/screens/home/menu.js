@@ -56,7 +56,7 @@ const Menu = () => {
 		<section id="menu">
 			<div>
 				<p>Menu</p>
-				<ul>
+				<ul className="breakfast-lunch-menu">
 					<li onClick={() => setSelectedCategory(BREAKFAST)}>
 						Breakfast
 					</li>
