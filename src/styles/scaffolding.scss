@@ -1,3 +1,7 @@
+body {
+    font-family: 'Inconsolata';
+}
+
 #home-page > section {
      > div {
         max-width: 1980px;
@@ -6,7 +10,8 @@
 
         p,
         a {
-            font-size: 40px
+            font-size: 40px;
+            font-family: 'Inconsolata';
         };
 
         a {
@@ -30,3 +35,11 @@
         }
     }
 }
+
+@media screen and (max-width: 961px) {
+    #home-page>section {
+        > div {
+            padding: 70px 30px;
+        }
+    }
+};
