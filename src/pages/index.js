@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Layout } from '/src/components';
 import { Navbar } from '../components/shared';
 import {
@@ -12,14 +12,19 @@ import {
 } from '/src/screens/home';
 
 const IndexPage = () => {
+	const [activeSection, setActiveSection] = useState('home');
+
 	return (
 		<Layout>
-			<Navbar />
+			<Navbar activeSection={activeSection} />
 			<main id="home-page">
-				<Splash />
-				<Contact />
+				<Splash setActiveSection={setActiveSection} />
+				<Contact setActiveSection={setActiveSection} />
 				<MidSplash />
-				<Menu />
+				<Menu
+					setActiveSection={setActiveSection}
+					activeSection={activeSection}
+				/>
 				<AboutUs />
 				<Map />
 				<FindUs />

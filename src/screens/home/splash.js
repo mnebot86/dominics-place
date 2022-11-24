@@ -1,11 +1,18 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import useIntersectionObserver from '/src/hooks/useIntersectionObserver';
 
-const Splash = () => {
+const Splash = ({ setActiveSection }) => {
+	const [setRef, visible] = useIntersectionObserver();
+
+	useEffect(() => {
+		if (visible) {
+			setActiveSection('home');
+		}
+	}, [visible]);
+
 	return (
-		<section id="splash">
-			<div>
-				<div className="background" />
-			</div>
+		<section id="splash" ref={setRef}>
+			<div className="background"></div>
 		</section>
 	);
 };

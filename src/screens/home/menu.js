@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import useIntersectionObserver from '/src/hooks/useIntersectionObserver';
 import { MENU_TYPES, BREAKFAST, LUNCH, TRADITIONAL } from '../../utils/menu';
 import {
 	Traditional,
@@ -44,7 +45,15 @@ const ITEMS_LIST = {
 	Drinks: <Drinks />,
 };
 
-const Menu = () => {
+const Menu = ({ setActiveSection }) => {
+	const [setRef, visible] = useIntersectionObserver();
+
+	useEffect(() => {
+		if (visible) {
+			setActiveSection('menu');
+		}
+	}, [visible]);
+
 	const [selectedCategory, setSelectedCategory] = useState(BREAKFAST);
 	const [listName, setListName] = useState('Traditional');
 
@@ -53,7 +62,7 @@ const Menu = () => {
 	};
 
 	return (
-		<section id="menu">
+		<section id="menu" ref={setRef}>
 			<div>
 				<p>Menu</p>
 				<ul className="breakfast-lunch-menu">

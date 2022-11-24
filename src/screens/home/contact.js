@@ -1,8 +1,17 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import useIntersectionObserver from '/src/hooks/useIntersectionObserver';
 
-const Contact = () => {
+const Contact = ({ setActiveSection }) => {
+	const [setRef, visible] = useIntersectionObserver({ threshold: 0.5 });
+
+	useEffect(() => {
+		if (visible) {
+			setActiveSection('contacts');
+		}
+	}, [visible]);
+
 	return (
-		<section id="contact">
+		<section id="contact" ref={setRef}>
 			<div>
 				<div className="location">
 					<p>Location</p>

@@ -1,12 +1,38 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Inconsolata';
 }
+
+.cta-button {
+    padding: 10px 20px;
+    background-color: red;
+    border-radius: 5px;
+
+}
+
+ .mobile-view {
+     display: none;
+ }
+
+ .desktop-view {
+     display: block;
+ }
 
 #home-page > section {
      > div {
         max-width: 1980px;
         margin: 0 auto;
-        padding: 104px 120px;
 
         p,
         a {
@@ -37,6 +63,14 @@ body {
 }
 
 @media screen and (max-width: 961px) {
+    .mobile-view {
+        display: block;
+    }
+
+    .desktop-view {
+        display: none;
+    }
+
     #home-page>section {
         > div {
             padding: 70px 30px;
