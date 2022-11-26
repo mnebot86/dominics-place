@@ -13,22 +13,34 @@ const Contact = ({ setActiveSection }) => {
 	return (
 		<section id="contact" ref={setRef}>
 			<div>
-				<div className="location">
-					<p>Location</p>
-					<a href="https://maps.apple.com/maps?q=1270+mineral+spring+ave+north+providence+ri+02904">
-						1270 Mineral Spring Ave North Providence RI 02904
-					</a>
+				<div className="container">
+					<div>
+						<h2>Hours of Operation</h2>
+						<p>Open 7 days a week</p>
+						<p>6am to 3pm</p>
+					</div>
+					<div className="hours-img img" />
 				</div>
 
-				<div className="hours">
-					<p>Hours</p>
-					<p>7 days Weekly 6am -3pm</p>
+				<div className="container">
+					<div>
+						<h2>Our Location</h2>
+						<a href="https://maps.apple.com/maps?q=1270+mineral+spring+ave+north+providence+ri+02904">
+							<p>1270 Mineral Spring Ave</p>
+							<p>North Providence RI 02904</p>
+						</a>
+					</div>
+					<div className="location-img img" />
 				</div>
 
-				<div className="contact">
-					<p>Contact</p>
-					<a href="tel:4013355339">(401)-335-5339 </a>
-					<a href="mailto:email@email.com">email@email.com</a>
+				<div className="container">
+					<div>
+						<h2>Contact</h2>
+						<a href="tel:4013355339">
+							<p>(401)-335-5339</p>
+						</a>
+					</div>
+					<div className="contact-img img" />
 				</div>
 			</div>
 		</section>
