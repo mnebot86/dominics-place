@@ -7,7 +7,6 @@ import {
 	MidSplash,
 	Menu,
 	AboutUs,
-	Map,
 	FindUs,
 } from '/src/screens/home';
 
@@ -26,7 +25,6 @@ const IndexPage = () => {
 					activeSection={activeSection}
 				/>
 				<AboutUs />
-				<Map />
 				<FindUs />
 			</main>
 		</Layout>

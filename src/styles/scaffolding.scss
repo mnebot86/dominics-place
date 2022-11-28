@@ -14,6 +14,11 @@ body {
     font-family: 'Inconsolata';
 }
 
+img {
+    width: 100%;
+    object-fit: cover;
+}
+
 .cta-button {
     padding: 10px 20px;
     background-color: red;
@@ -59,10 +64,6 @@ body {
         .container {
             display: flex;
             justify-content: space-between;
-        }
-
-        img {
-            width: 100%;
         }
     }
 }

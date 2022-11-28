@@ -9,7 +9,10 @@ const AboutUs = () => {
 				<h1>About Us</h1>
 
 				<div className="container">
-					<img src={Dinning} alt="Dinning" />
+					<div className="dinning-img">
+						<img src={Dinning} alt="Dinning" />
+					</div>
+
 					<p>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 						Curabitur aliquam est a lorem euismod luctus. Maecenas
@@ -41,7 +44,10 @@ const AboutUs = () => {
 						eleifend. Interdum et malesuada fames ac ante ipsum
 						primis in faucibus.
 					</p>
-					<img src={Bio} alt="Bio" />
+
+					<div className="bio-img">
+						<img src={Bio} alt="Bio" />
+					</div>
 				</div>
 			</div>
 		</section>

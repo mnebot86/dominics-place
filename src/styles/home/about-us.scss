@@ -13,10 +13,16 @@ section#about-us {
             margin-top: 277px;
         }
 
-
-        img {
+        .dinning-img {
             flex: 1 1 600px;
-            object-fit: cover;
+
+            img {
+                border-radius: 24px;
+            }
+        }
+
+        .bio-img {
+            width: 40%;
         }
 
         p {
