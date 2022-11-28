@@ -3,17 +3,28 @@ import { LITE_AND_FIT } from '../../utils/menu';
 
 const LiteAndFit = () => {
 	return (
-		<div>
-			<h4>lite and fit</h4>
+		<div className="lite-and-fit">
+			<h3>lite and fit</h3>
 
-			{LITE_AND_FIT.map((item, idx) => (
-				<div key={`lite-${idx}`}>
-					<h5>
-						{item.name} {item.price}
-					</h5>
-					<p>{item.description}</p>
-				</div>
-			))}
+			<div className="menu-card-container">
+				{LITE_AND_FIT.map((item, idx) => (
+					<div key={`lite-${idx}`} className="card">
+						<div
+							className="card-img"
+							style={{
+								backgroundImage: `url(${item.image})`,
+							}}
+						/>
+
+						<div className="card-content">
+							<p className="card-title">
+								{item.name} {item.price}
+							</p>
+							<p>{item.description}</p>
+						</div>
+					</div>
+				))}
+			</div>
 		</div>
 	);
 };

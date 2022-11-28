@@ -3,20 +3,31 @@ import { OMELETS } from '../../utils/menu';
 
 const Omelets = () => {
 	return (
-		<div>
+		<div className="omelets">
 			<p>
 				Served with homefries and choice of toast, add an egg $.99 or
 				egg whites $1.49, Substitute fruit cup $1.49/Grits $2.99
 			</p>
 
-			{OMELETS.map((item, idx) => (
-				<div key={`omelet-${idx}`}>
-					<h4>
-						{item.name} {item.price}
-					</h4>
-					<p>{item.description}</p>
-				</div>
-			))}
+			<div className="menu-card-container">
+				{OMELETS.map((item, idx) => (
+					<div key={`omelet-${idx}`} className="card">
+						<div
+							className="card-img"
+							style={{
+								backgroundImage: `url(${item.image})`,
+							}}
+						/>
+
+						<div className="card-content">
+							<p className="card-title">
+								{item.name} {item.price}
+							</p>
+							<p>{item.description}</p>
+						</div>
+					</div>
+				))}
+			</div>
 
 			<h4>Build your Own Omelet $7.99</h4>
 			<h6>

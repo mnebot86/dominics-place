@@ -3,19 +3,30 @@ import { BENEDICTS } from '../../utils/menu';
 
 const Benedicts = () => {
 	return (
-		<div>
-			<p>
-				All served with two poached eggs over grilled English muffin and
-				served with a side of home fries.
-			</p>
+		<div className="benedicts">
+			<div className="content">
+				<p>
+					All served with two poached eggs over grilled English muffin
+					and served with a side of home fries.
+				</p>
+			</div>
 
-			<ol>
+			<div className="menu-card-container">
 				{BENEDICTS.map((item, idx) => (
-					<li key={`benedict-${idx}`}>
-						{item.name} {item.price}
-					</li>
+					<div key={`benedict-${idx}`} className="card">
+						<div
+							className="card-img"
+							style={{
+								backgroundImage: `url(${item.image})`,
+							}}
+						/>
+
+						<div className="card-content">
+							{item.name} {item.price}
+						</div>
+					</div>
 				))}
-			</ol>
+			</div>
 		</div>
 	);
 };

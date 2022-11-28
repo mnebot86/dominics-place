@@ -6,19 +6,30 @@ const Appetizers = () => {
 		<div>
 			<h3>Appetizers</h3>
 
-			{!!APPETIZERS &&
-				APPETIZERS.map((item, idx) => (
-					<div key={`appetizer-${idx}`}>
-						<h4>
-							{item.name} {item.price}
-						</h4>
-						<p>{item.description}</p>
-						{!!item.flavors &&
-							item.flavors.map((item, idx) => (
-								<li key={`flavors-${idx}`}>{item}</li>
-							))}
-					</div>
-				))}
+			<div className="menu-card-container">
+				{!!APPETIZERS &&
+					APPETIZERS.map((item, idx) => (
+						<div key={`appetizer-${idx}`} className="card">
+							<div
+								className="card-img"
+								style={{
+									backgroundImage: `url(${item.image})`,
+								}}
+							/>
+
+							<div className="card-content">
+								<p className="card-title">
+									{item.name} {item.price}
+								</p>
+								<p>{item.description}</p>
+								{!!item.flavors &&
+									item.flavors.map((item, idx) => (
+										<li key={`flavors-${idx}`}>{item}</li>
+									))}
+							</div>
+						</div>
+					))}
+			</div>
 		</div>
 	);
 };

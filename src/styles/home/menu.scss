@@ -1,37 +1,101 @@
 section#menu {
-    text-align: center;
+	> div {
+		text-align: center;
 
-    ul {
-        display: flex;
-        justify-content: center;
-        list-style: none;
-        flex-wrap: wrap;
+		h2 {
+			margin-bottom: 40px;
+		}
 
-        li {
-            border-right: 1px solid black;
-            flex: 1 10%;
-            min-width: 100px;
-            font-size: 18px;
+		.breakfast-lunch-menu {
+			display: flex;
+			list-style: none;
+			justify-content: space-around;
 
-            &:last-of-type {
-                border: none;
-                min-width: none;
-            }
-        }
-    }
+			li {
+				font-size: 28px;
+				margin-bottom: 20px;
+				cursor: pointer;
+				padding: 20px;
+				transform: scale(1);
+				transition: all 300ms;
+
+				&.active {
+					color: red;
+					transform: scale(1.2);
+					font-family: 'Inconsolata Bold';
+				}
+			}
+		}
+		.menu-nav-container {
+			.item-title {
+				display: none;
+			}
+
+			.category-nav {
+				display: flex;
+				margin-bottom: 25px;
+				justify-content: space-between;
+				list-style: none;
+				font-size: 18px;
+
+				li {
+					transition: 300ms;
+
+					&.active {
+						color: red;
+						font-family: 'Inconsolata Bold';
+					}
+
+					&:hover {
+						transform: scale(1.2);
+						font-family: 'Inconsolata Bold';
+					}
+				}
+			}
+		}
+	}
 }
 
 @media screen and (max-width: $desktop) {
-    section#menu {
-        .breakfast-lunch-menu {
-            flex-wrap: nowrap;
-        }
+	section#menu {
+		> div {
+			.menu-nav-container {
+				.item-title {
+					display: block;
+					color: red;
+					background-color: black;
+					padding: 20px 0;
+					font-family: 'Inconsolata Bold';
+					border-radius: 24px;
+				}
 
-        ul {
-            li {
-                border: none;
-                margin: 5px 0;
-            }
-        }
-    }
+				.category-nav {
+					flex-direction: column;
+					overflow: hidden;
+					max-height: 0;
+					transform-origin: top;
+					transition: 300ms ease;
+
+					&.open {
+						max-height: 300px;
+						padding: 15px 0;
+					}
+
+					li {
+						margin-bottom: 10px;
+
+						&.active {
+							color: red;
+							font-family: 'Inconsolata Bold';
+						}
+
+						&:hover {
+							transform: scale(1.2);
+							font-family: 'Inconsolata Bold';
+						}
+					}
+				}
+			}
+		}
+	}
 }
