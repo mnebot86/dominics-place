@@ -3,17 +3,27 @@ import { SIGNATURE_PLATES } from '../../utils/menu';
 
 const Signature = () => {
 	return (
-		<div>
-			<h4>Signature Plates</h4>
+		<div className="signature-plates">
+			<div className="menu-card-container">
+				{SIGNATURE_PLATES.map((item, idx) => (
+					<div key={`signature-${idx}`} className="card">
+						<div
+							className="card-img"
+							style={{
+								backgroundImage: `url(${item.image})`,
+							}}
+						/>
 
-			{SIGNATURE_PLATES.map((item, idx) => (
-				<div key={`signature-${idx}`}>
-					<h6>
-						{item.name} {item.price}
-					</h6>
-					<p>{item.description}</p>
-				</div>
-			))}
+						<div className="card-content">
+							<p className="card-title">
+								{item.name} {item.price}
+							</p>
+
+							<p>{item.description}</p>
+						</div>
+					</div>
+				))}
+			</div>
 		</div>
 	);
 };

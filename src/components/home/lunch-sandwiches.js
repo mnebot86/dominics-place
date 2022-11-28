@@ -10,15 +10,26 @@ const LunchSandwiches = () => {
 				wheat wrap, tomato basil wrap, or sub roll
 			</p>
 
-			{!!LUNCH_SANDWICHES &&
-				LUNCH_SANDWICHES.map((item, idx) => (
-					<div key={`lunch-sandwich-${idx}`}>
-						<h4>
-							{item.name} {item.price}
-						</h4>
-						<p>{item.description}</p>
-					</div>
-				))}
+			<div className="menu-card-container">
+				{!!LUNCH_SANDWICHES &&
+					LUNCH_SANDWICHES.map((item, idx) => (
+						<div key={`lunch-sandwich-${idx}`} className="card">
+							<div
+								className="card-img"
+								style={{
+									backgroundImage: `url(${item.image})`,
+								}}
+							/>
+
+							<div className="card-content">
+								<p className="card-title">
+									{item.name} {item.price}
+								</p>
+								<p>{item.description}</p>
+							</div>
+						</div>
+					))}
+			</div>
 		</div>
 	);
 };

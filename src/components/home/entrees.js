@@ -6,17 +6,27 @@ const Entrees = () => {
 		<div>
 			<h3>Entrees</h3>
 
-			{!!ENTREES &&
-				ENTREES.map((item, idx) => (
-					<div key={`entrees-${idx}`}>
-						<h4>
-							{item.name} {item.price}
-						</h4>
-						<p>{item.description}</p>
+			<div className="menu-card-container">
+				{!!ENTREES &&
+					ENTREES.map((item, idx) => (
+						<div key={`entrees-${idx}`} className="card">
+							<div
+								className="card-img"
+								style={{
+									backgroundImage: `url(${item.image})`,
+								}}
+							/>
+							<div className="card-content">
+								<p className="card-title">
+									{item.name} {item.price}
+								</p>
+								<p>{item.description}</p>
 
-						{!!item.protein && <p>{item.protein}</p>}
-					</div>
-				))}
+								{!!item.protein && <p>{item.protein}</p>}
+							</div>
+						</div>
+					))}
+			</div>
 		</div>
 	);
 };

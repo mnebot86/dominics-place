@@ -3,16 +3,27 @@ import { BREAKFAST_SIDES } from '../../utils/menu';
 
 const BreakfastSides = () => {
 	return (
-		<div>
+		<div className="breakfast-sides">
 			<h4>Sides</h4>
-			<ol>
+			<div className="menu-card-container">
 				{!!BREAKFAST_SIDES &&
 					BREAKFAST_SIDES.map((item, idx) => (
-						<li key={`breakfast-side-${idx}`}>
-							{item.name} {item.price}
-						</li>
+						<div key={`breakfast-side-${idx}`} className="card">
+							<div
+								className="card-img"
+								style={{
+									backgroundImage: `url(${item.image})`,
+								}}
+							/>
+
+							<div className="card-content">
+								<p className="card-title">
+									{item.name} {item.price}
+								</p>
+							</div>
+						</div>
 					))}
-			</ol>
+			</div>
 		</div>
 	);
 };

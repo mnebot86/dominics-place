@@ -1,0 +1,25 @@
+.traditional {
+	h3 {
+		font-size: 32px;
+		font-family: 'Inconsolata Semibold';
+		margin-bottom: 30px;
+	}
+
+	> p {
+		margin-bottom: 30px;
+	}
+}
+
+@media screen and (max-width: $desktop) {
+	.traditional {
+		.traditional-items-container {
+			justify-content: center;
+
+			.card {
+				.card-img {
+					height: 30vh;
+				}
+			}
+		}
+	}
+}
